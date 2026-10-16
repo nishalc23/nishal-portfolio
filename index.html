@@ -86,7 +86,7 @@ async function moveCamera(enter){
 }
 function enterComputer3D(){if(!document.body.classList.contains('zoomed'))return moveCamera(true)}
 function leaveComputer(){return moveCamera(false)}
-enterButton.onclick=enterComputer3D;$('#focus-mode').onclick=toggleFocus;$('#view-toggle').onclick=toggleFocus;
+enterButton.onclick=enterComputer3D;$('#focus-mode').onclick=toggleFocus;
 window.addEventListener('resize',setOverview);setOverview();
 // Route wheel and trackpad input to the window under the pointer in the 3D screen.
 document.addEventListener('wheel',event=>{
