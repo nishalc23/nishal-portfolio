@@ -1,7 +1,16 @@
-# Nishal Chintalapati — The Arcade
+# Nishal Chintalapati — Sakura Street
 
-Three interactive futuristic claw machines contain About Me, Experience, and Projects. The cabinets, glass, claw, joystick, prizes, and collection chute are implemented in HTML, CSS, SVG, and JavaScript. The scene uses a generated atmospheric background.
+A Three.js portfolio with three red, physically modeled claw cabinets on a cherry blossom street. The camera starts across the road and smoothly moves into the selected machine. Back returns to the street overview.
 
-Click a cabinet, then an object. The claw grabs it, carries it to the drop hole, and releases a prize into the chute. Click the collected prize to open its details. The joystick cycles selections and the Grab button operates the claw. Phone tabs switch between cabinets; arrow keys cycle items; Escape returns to the overview. Reduced-motion preferences are supported.
+Cabinets, glass, metal hardware, controls, claws, and distinct collectible objects are real 3D geometry. The sakura setting uses a generated photographic backdrop. Click an object to operate the claw; click its prize chute to open the details. Arrow keys and Enter also operate a selected machine. Mobile tabs switch machines, and reduced-motion preferences are supported.
 
-Run `python3 -m http.server 4173` and visit http://localhost:4173. No dependencies or build step. The main branch deploys to the existing Vercel portfolio project.
+Run locally with `python3 -m http.server 4173` and visit http://localhost:4173. No runtime network dependencies: Three.js and its helpers are bundled into assets/scene.js.
+
+To rebuild after changing src/scene.js:
+
+```
+npm install --no-save three@0.186.1 esbuild@0.28.2
+npx esbuild src/scene.js --bundle --format=esm --minify --outfile=assets/scene.js
+```
+
+The connected main branch deploys the repository root to Vercel without a build step.
