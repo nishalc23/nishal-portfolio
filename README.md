@@ -1,9 +1,7 @@
-# Nishal Chintalapati — After Hours
+# Nishal Chintalapati — The Arcade
 
-An interactive portfolio set in a full-screen neon Tokyo street. Three vending machines contain About Me, Experience, and Projects.
+Three interactive futuristic claw machines contain About Me, Experience, and Projects. The cabinets, glass, claw, joystick, prizes, and collection chute are implemented in HTML, CSS, SVG, and JavaScript. The scene uses a generated atmospheric background.
 
-Click a machine to zoom into its functional interface. Select a labeled drink, watch it drop, then collect it from the tray to open the details. On phones, the bottom selector moves between machines. Direct portfolio navigation remains available.
+Click a cabinet, then an object. The claw grabs it, carries it to the drop hole, and releases a prize into the chute. Click the collected prize to open its details. The joystick cycles selections and the Grab button operates the claw. Phone tabs switch between cabinets; arrow keys cycle items; Escape returns to the overview. Reduced-motion preferences are supported.
 
-Built with dependency-free HTML, CSS, and JavaScript. The photographic scene is a generated WebP asset; selection controls, menus, dispensing animation, collection trays, and detail panels are live website elements.
-
-Run `python3 -m http.server 4173` and visit http://localhost:4173. The connected main branch deploys to Vercel. No build step is needed.
+Run `python3 -m http.server 4173` and visit http://localhost:4173. No dependencies or build step. The main branch deploys to the existing Vercel portfolio project.
