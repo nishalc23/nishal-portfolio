@@ -1,11 +1,9 @@
-# Nishal Chintalapati — Portfolio
+# Nishal's Night Market
 
-Static portfolio with cursor-responsive particle background.
+An interactive pixel-art software engineering portfolio. Original Canvas artwork, three vending machines, keyboard and touch movement, project selection, and optional synthesized sound.
 
-## GitHub Pages
+Static, dependency-free HTML/CSS/JavaScript. Run locally with `python3 -m http.server 4173`, then visit http://localhost:4173.
 
-Upload index.html and .nojekyll to a public repository. In Settings → Pages, select Deploy from a branch, main, / (root), then Save.
+Click a vending machine, or use the left/right arrow keys and E to interact. Navigation buttons provide direct access to portfolio content. The interface supports reduced motion, keyboard focus, modal dismissal, and mobile controls.
 
-## Vercel
-
-Import the repository, choose Other as the framework, leave the build command empty, and set the output directory to `.`.
+The `main` branch deploys to the existing Vercel portfolio project. `vercel.json` serves the repository root without a build step.
