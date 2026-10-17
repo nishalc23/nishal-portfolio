@@ -1,9 +1,9 @@
-# Nishal's Night Market
+# Nishal Chintalapati — After Hours
 
-An interactive pixel-art software engineering portfolio. Original Canvas artwork, three vending machines, keyboard and touch movement, project selection, and optional synthesized sound.
+An interactive portfolio set in a full-screen neon Tokyo street. Three vending machines contain About Me, Experience, and Projects.
 
-Static, dependency-free HTML/CSS/JavaScript. Run locally with `python3 -m http.server 4173`, then visit http://localhost:4173.
+Click a machine to zoom into its functional interface. Select a labeled drink, watch it drop, then collect it from the tray to open the details. On phones, the bottom selector moves between machines. Direct portfolio navigation remains available.
 
-Click a vending machine, or use the left/right arrow keys and E to interact. Navigation buttons provide direct access to portfolio content. The interface supports reduced motion, keyboard focus, modal dismissal, and mobile controls.
+Built with dependency-free HTML, CSS, and JavaScript. The photographic scene is a generated WebP asset; selection controls, menus, dispensing animation, collection trays, and detail panels are live website elements.
 
-The `main` branch deploys to the existing Vercel portfolio project. `vercel.json` serves the repository root without a build step.
+Run `python3 -m http.server 4173` and visit http://localhost:4173. The connected main branch deploys to Vercel. No build step is needed.
